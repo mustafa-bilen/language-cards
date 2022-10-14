@@ -1,38 +1,69 @@
-.App {
-  text-align: center;
+:root {
+  --color1: #a0a603;
+  --color2: #d9d8d7;
+  --color3: #f27b35;
+  --color4: #d93e30;
+  --color5: #8c1414;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+body {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  background-color: #f0e68c;
+}
+.down-container {
+  background-color: #ff7f00;
+  width: 350px;
+  border-radius: 20px;
+}
+.main-container {
+  display: grid;
+  justify-content: space-between;
+  align-items: center;
+  grid-template-columns: auto auto;
+  grid-template-columns: 150px 150px;
+  padding: 1rem;
+  gap: 0.5rem;
+}
+.reactlogo {
+  width: 200px;
+  text-align: center;
+  margin: 1rem;
+}
+h2 {
+  text-align: center;
+  margin: 0.5rem;
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.container {
+  background-color: white;
+  border-radius: 15px;
+  padding: 0.5rem;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.container img {
+  max-width: 75px;
+  max-height: 75px;
+}
+.container p {
+  font-size: 15px;
+  text-align: left;
+  list-style-position: inside;
+  width: auto;
+  height: 100px;
+  margin: auto;
+}
+.container:hover {
+  box-shadow: 0 0 8px var(--color5);
+  box-shadow: 0 0 8px var(--color5);
+}
+.container:hover img {
+  transform: scale(1.2);
+  transition: all 0.5s ease;
 }
